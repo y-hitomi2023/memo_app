@@ -14,6 +14,8 @@
       {{-- <p>本文</p> --}}
       {{-- <p>{{ $memo->body }}</p> --}}
       <p>{!! nl2br(e($memo->body)) !!}</p>
+
+      <button onclick='location.href="{{ route("memos.edit", $memo) }}"'>編集する</button>
   </body>
 
   </html>
